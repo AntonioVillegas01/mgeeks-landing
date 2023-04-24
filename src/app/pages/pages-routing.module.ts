@@ -4,6 +4,8 @@ import {HomeComponent} from "./home/home.component";
 import {LayoutComponent} from "./layout/layout.component";
 
 import {NotFoundComponent} from "./not-found/not-found.component";
+import {ContactoComponent} from "./contacto/contacto.component";
+import {AcercaComponent} from "./acerca/acerca.component";
 
 
 
@@ -17,6 +19,8 @@ const routes: Routes = [
     children: [
       {path: '', redirectTo: 'inicio', pathMatch: 'full'},
       {path: 'inicio', component: HomeComponent, data: {title: 'Inicio'},},
+      {path: 'acerca', component: AcercaComponent, data: {title: 'Acerca'},},
+      {path: 'contacto', component: ContactoComponent, data: {title: 'Contacto'},},
 
 
 

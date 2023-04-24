@@ -5,8 +5,10 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import {RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 import {AppModule} from "../app.module";
+import { ContactoComponent } from './contacto/contacto.component';
+import { AcercaComponent } from './acerca/acerca.component';
 
 
 
@@ -16,12 +18,15 @@ import {AppModule} from "../app.module";
     HomeComponent,
     NotFoundComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactoComponent,
+    AcercaComponent
   ],
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    AppModule
-  ]
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        AppModule,
+        RouterLink
+    ]
 })
 export class PagesModule { }
